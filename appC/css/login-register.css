@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --clr-black: #000;
+    --clr-light-yellow:#fceac1;
+    --clr-dark-yellow:#f5a860;
+    --clr-white: #fff;
+
+    --font-primary: Arial, sans-serif;
+    --font-secondary: "Poppins", sans-serif;
+}
+
+
+/* General Page Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--clr-light-yellow);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Centering the form container */
+form {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* Form Header */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Fields */
+label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--clr-dark-yellow);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fcca9c
+}
+
+/* Links */
+a {
+    color: var(--clr-dark-yellow);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Error Messages */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+}
